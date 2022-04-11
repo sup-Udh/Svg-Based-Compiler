@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body id="lol">
+<body>
     
 </body>
-<script src="../src/lexer-v1.js"></script>
+<script src="../Main.js" >
+    var code = 'Paper 95\nPen 1\nLine 50 15 85 80\nPen 30\nLine 85 80 15 80\nPen 70\nLine 15 80 50 15'
+var svg = sbn.compile(code)
+
+document.body.innerHTML = svg
+</script>
 </html>
